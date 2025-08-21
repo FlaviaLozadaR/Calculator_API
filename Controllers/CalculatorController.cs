@@ -7,10 +7,10 @@ namespace CalculatorAPI.Controllers
     [ApiController]
     public class CalculatorController : ControllerBase
     {
-        [HttpGet("Resta")]
-        public IActionResult GetResta([FromQuery] int a, [FromQuery] int b)
+        [HttpGet("Mult")]
+        public IActionResult GetMult([FromQuery] int a, [FromQuery] int b)
         {
-            int result = a - b; // o: var result = a - b;
+            int result = a * b; // o: var result = a - b;
             return Ok(new { a, b, result });
         }
     }
